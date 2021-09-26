@@ -2,8 +2,9 @@ import React from "react";
 import AddCart from "../AddCart/AddCart";
 import "./Cart.css";
 const Cart = (props) => {
-    // console.log(props);
+   
     const { cart } = props
+    // total salary
     const totalReducer = (pervValue,currentValue)=>parseFloat(pervValue)+parseFloat(currentValue.salary)
     const total = cart.reduce(totalReducer, 0)
    
@@ -14,7 +15,12 @@ const Cart = (props) => {
                 <div className="card-body">
                     <h6 className="card-title"> <i className="fas fa-user"></i>  : {cart.length} </h6>
                     <h6 className="card-title"> <i className="fas fa-money-check-alt"></i>  : {total} </h6>
-                        <AddCart programmer={cart} ></AddCart>
+
+                    {/* person name and image added to cart  */}
+                    
+                    <AddCart programmer={cart}
+                      key={cart.key}
+                    ></AddCart>
                 </div>
             </div>
         </div>

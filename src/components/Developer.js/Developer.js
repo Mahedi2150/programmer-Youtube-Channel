@@ -1,8 +1,7 @@
 import React from "react";
 import "./Developer.css";
 const Developer = (props) => {
-  const { name, email, img, address, salary, youtube_channel } =
-    props.developer;
+  const { name, email, img, address, salary, youtube_channel } = props.developer;
   return (
     <div>
       <div className="">
