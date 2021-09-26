@@ -9,7 +9,7 @@ const Header = () => {
           <h4 class="card-text">
           Best youtube channel for learn programming.
                   </h4>
-              <h2>Total Cost : 1 Million</h2>
+              <h2>Total Cost : 2 Million</h2>
         </div>
         
       </div>
